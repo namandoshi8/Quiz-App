@@ -1,8 +1,6 @@
 import React from "react";
-import { useQuiz } from "../Contexts/QuizContext";
 
-export default function Landing() {
-  const { numberOfQuestions, dispatch } = useQuiz();
+export default function Landing({ numberOfQuestions, dispatch }) {
   return (
     <div className="start">
       <h2>Welcome to the React Quiz!</h2>

@@ -1,8 +1,6 @@
 import React from "react";
-import { useQuiz } from "../Contexts/QuizContext";
 
-export default function Options({ questions }) {
-  const { dispatch, answer } = useQuiz();
+export default function Options({ questions, dispatch, answer }) {
   const hasAnswered = answer !== null;
   return (
     <div className="options">
